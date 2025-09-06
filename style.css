@@ -1,0 +1,141 @@
+/* UNIVERSAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ELEMENT SELECTOR */
+body{
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    line-height: 1.6;
+    background-image: url(https://media.istockphoto.com/id/1159644956/photo/school-supplies-bottom-border-top-view-on-a-white-background-with-copy-space-back-to-school.jpg?s=2048x2048&w=is&k=20&c=RE0rUV_worCTWiQytQPfJ4-osKkdpOy3iN3uNwB0KsY=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+h1{
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    font-size: 60px;
+}
+p{
+    margin-bottom: 20px;
+    color: #000000;
+    font-size: 18px;
+    text-shadow: #ffffff;
+}
+/* CLASS SELECTOR */
+.desc{
+    text-align: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    background: white;
+    border-radius: 12px;
+    padding: 50px;
+}
+
+/* DESCENDANT SELECTOR */
+h2{
+    color: #2c3e50;
+}
+table caption{
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 8px rgb(0, 0, 0, 0.1);
+}
+th, td{
+    border: 1px solid #ffe70b;
+    padding: 12px;
+    text-align: center;
+}
+th{
+    background: rgb(205, 235, 98);
+    color: rgb(15, 15, 15);
+}
+tr:nth-child(even){
+    background: rgba(255, 253, 112, 0.575);
+}
+#registration-form{
+    background: rgb(205, 235, 98);
+    padding: 24px;
+    border: 1px solid #ffe70b;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgb(0, 0, 0, 0.1)
+}
+#registration-form h2{
+    color: #2c3e50;
+    margin-bottom: 14px;
+}
+.form-group{
+    display: block;
+    margin-bottom: 14px;
+}
+.form-group label{
+    font-weight: bold;
+    margin-top: 4px;
+}
+input, select, textarea{
+    padding: 10px;
+    margin-top: 4px;
+    width: 100%;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+input[type="radio"],
+input[type="checkbox"]{
+    width: auto;
+    margin-right: 5px;
+}
+input[required]{
+    border-left: 10px solid rgb(231, 127, 127);
+}
+/* PSEUDO CLASS */
+input:focus,
+select:focus,
+textarea:focus{
+    outline: none;
+    border: 1px solid rgb(231, 127, 127);
+    box-shadow: 0 0 4px rgb(38, 123, 179, 0.5);
+}
+button{
+    padding: 10px 14px;
+    margin-top: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+}
+button[type="submit"]{
+    background: #27ae60;
+}
+button[type="submit"]:hover{
+    background: #134b2a;
+}
+button[type="reset"]{
+    background: #df4742;
+}
+button[type="reset"]:hover{
+    background: #831915;
+}
+
+/* Responsiveness */
+@media(max-width: 900px) {
+    .container{
+        grid-template-columns: 3fr;
+    }
+}
